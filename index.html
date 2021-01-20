@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container p-5  mt-5 mb-4">
+    <h1 class="mb-5 text-danger text-center">Employees list</h1>
+    <div class="form-group">
+      <label for="">Employee name</label>
+      <input  type="text" name="" id="name" class="form-control">
+      <p id="alertName" class="alert alert-danger mt-1 text-center p-2 d-none" role="alert"></p>
+    </div>
+
+    <div class="form-group">
+      <label for="">Employee age</label>
+      <input type="text" name="" id="age" class="form-control">
+      <p id="alertAge" class="alert alert-danger  text-center p-2 d-none" role="alert"></p>
+    </div>
+
+
+    <div class="form-group">
+      <label for="">Employee salary</label>
+      <input type="text" name="" id="salary" class="form-control">
+      <p id="alertSalary" class="alert alert-danger  text-center p-2 d-none" role="alert"></p>
+    </div>
+
+
+    <div class="form-group">
+      <label for="">Employee phone</label>
+      <input type="text" name="" id="phone" class="form-control">
+      <p id="alertPhone" class="alert alert-danger text-center p-2 d-none" role="alert"></p>
+    </div>
+    <div class="mb-4">
+      <button class="btn btn-primary" id="btnAdd">Add Employee</button>
+      <p id="alertAdd" class="d-none alert alert-danger text-center p-2 mt-1" role="alert"></p>
+      <button  class="btn btn-success" id="btnUpdate">Update Employee</button>
+      <p id="alertUpdate" class="d-none alert alert-danger text-center p-2 mt-1" role="alert"></p>
+    </div>
+    <input placeholder="search by name" class="form-control w-75 m-auto" id="search">
+  </div>
+
+  <table id="table"  class=" table w-75 m-auto table-striped text-center mt-5 col-md-12">
+    <thead>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Salary</th>
+      <th>Phone</th>
+      <th>Delete</th>
+      <th>Update</th>
+    </thead>
+    <tbody id="tbody">
+
+    </tbody>
+  </table>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
